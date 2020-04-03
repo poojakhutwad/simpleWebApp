@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="limiter">
+    <div class="container">
+      <div class="wrapper" style="background-image: url('../assets/Images/b1.jpg');">
+          <div class="card">
+              <div class="card-body">
+                <form>
+                  <span class="login-form-title p-b-43">
+                      Login
+                  </span>
+                  <div class="form-group">
+                    <label for="email">EmailID:</label>
+                    <input type="email" class="form-control" id="email"  placeholder="Enter email" #emailId required autofocus>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" #password required>
+                  </div>
+                  <div class="form-group">
+                    <small><a>Forget Password</a></small>
+                  </div>
+                  <button type="submit" class="btn btn-primary" (click)="authService.Login(emailId.value, password.value)">Submit</button>
+                  <div class="formGroup">
+                    <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()">
+                      <i class="fab fa-facebook"></i>
+                      Continue with Facebook
+                    </button>
+                  </div>
+
+                  <div class="formGroup">
+                    <button type="button" class="btn twitterBtn" (click)="authService.TwitterAuth()">
+                      <i class="fab fa-facebook"></i>
+                      Continue with twitter
+                    </button>
+                  </div>
+
+                  <div class="form-group">
+                    Not have an account<a [routerLink] ="'/register'">Register here !!!</a>
+                  </div>
+                </form>
+              </div>
+          </div>
+  </div>
+    </div>
+  </div>
+</body>
+</html>
+

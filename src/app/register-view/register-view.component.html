@@ -1,0 +1,61 @@
+<div class="limiter">
+  <div class="container">
+    <div class="wrapper" style="background-image: url('../assets/Images/b1.jpg');">
+      <div class="card">
+          <div class="card-body">
+    <form>
+    
+        <span class="login-form-title p-b-43">
+            Register Here!!!
+        </span>
+    
+      <!-- <div  class="form-group">
+        <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" name="firstName"  pattern="^[a-zA-Z]+$" placeholder="Firstname" #firstName  required>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="lastName"   pattern="^[a-zA-Z]+$" placeholder="Lastname" #lastName required >
+        </div>
+      </div>
+      </div> -->
+  
+      <div class="form-group">
+      <div class="row">
+        <div class="col">
+         <input type="email" class="form-control" name="email"  pattern="^[a-z0-9._]+@[a-z0-9]+\.[a-z]{2,}" placeholder="Email address" #email required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col">
+                <input type="password" class="form-control" name="password" placeholder="Password"  #password required>
+            </div>
+        </div>
+    </div>
+    
+  
+    <!-- <div class="form-group">
+      <div class="row">
+        <div class="col">
+         <input type="text" class="form-control" name="phone"  pattern="^\d{10}$" placeholder="Phone number" #phoneNumber required>
+        </div>
+      </div>
+    </div> -->
+      
+      <br>
+  
+    <div class="form-group">
+      <div class="row">
+      <div class="col-sm-4"></div>
+      <button  class="btn btn-secondary btn-sm" type="submit" (click)="authService.Register(email.value, password.value)">Register</button>
+      </div>
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>  
